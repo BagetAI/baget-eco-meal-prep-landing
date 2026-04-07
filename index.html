@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eco Meal Prep Delivery - Fresh, Healthy, Eco-Friendly</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    :root {
+      --color-base-bg: #f9f6f1;
+      --color-green: #2E7D32;
+      --color-red: #E53935;
+      --color-avocado: #7CB342;
+      --color-wood: #A67C52;
+      --color-shadow: #444444cc;
+      --font-family: 'Inter', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--color-base-bg);
+      font-family: var(--font-family);
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--color-green);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 2px 8px var(--color-shadow);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--color-green);
+      letter-spacing: 0.05em;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto 4rem auto;
+      padding: 0 1rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem 1rem;
+    }
+
+    .hero h1 {
+      color: var(--color-green);
+      font-size: 2.75rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .hero p {
+      max-width: 520px;
+      margin: 0 auto 2rem auto;
+      font-size: 1.125rem;
+      color: #555555;
+    }
+
+    .btn-primary {
+      background-color: var(--color-green);
+      color: #fff;
+      border: none;
+      padding: 0.85rem 2.2rem;
+      font-size: 1.125rem;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 12px rgba(46, 125, 50, 0.4);
+    }
+
+    .btn-primary:hover {
+      background-color: #276229;
+    }
+
+    section.features {
+      background-color: #ffffff;
+      padding: 3rem 2rem 4rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(166, 124, 82, 0.15);
+      margin-bottom: 3rem;
+    }
+
+    section.features h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--color-avocado);
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .feature-item {
+      flex: 1 1 280px;
+      background-color: #f9f6f1;
+      border: 1px solid var(--color-wood);
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+      transition: box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .feature-item:hover {
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    }
+
+    .feature-item h3 {
+      color: var(--color-red);
+      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .feature-item p {
+      font-size: 1rem;
+      color: #555555;
+      line-height: 1.4;
+    }
+
+    section.social-proof {
+      max-width: 860px;
+      margin: 0 auto 3rem auto;
+      padding: 1rem 1rem 2rem 1rem;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(46, 125, 50, 0.15);
+      text-align: center;
+    }
+
+    section.social-proof h2 {
+      font-size: 2rem;
+      color: var(--color-green);
+      margin-bottom: 1.25rem;
+      font-weight: 700;
+    }
+
+    section.social-proof .testimonials-placeholder {
+      font-style: italic;
+      color: #777777;
+      font-size: 1rem;
+      border: 2px dashed var(--color-avocado);
+      padding: 1.5rem;
+      border-radius: 6px;
+      max-width: 640px;
+      margin: 0 auto;
+      background-color: #f3f9f4;
+    }
+
+    footer {
+      background-color: var(--color-avocado);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .feature-list {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .btn-primary {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Eco Meal Prep</div>
+  </header>
+
+  <main>
+    <section class="hero" role="banner" aria-label="Eco Meal Prep Delivery introduction">
+      <h1>Fresh, Healthy Meals—Delivered in Eco-Friendly Packaging</h1>
+      <p>Meet your new weekday routine. Balanced, chef-prepped meals delivered to your door—made with fresh ingredients and packed to reduce waste. Start meal prep in minutes.</p>
+      <button class="btn-primary" onclick="location.href='#features'" aria-label="Learn more about features">Learn More</button>
+    </section>
+
+    <section id="features" class="features" aria-label="Features and benefits">
+      <h2>Why Choose Eco Meal Prep?</h2>
+      <div class="feature-list">
+        <article class="feature-item" tabindex="0">
+          <h3>Fresh, Chef-Prepared Meals</h3>
+          <p>Enjoy nutritious, balanced meals crafted by chefs using the freshest ingredients to support your healthy lifestyle.</p>
+        </article>
+        <article class="feature-item" tabindex="0">
+          <h3>Eco-Friendly Packaging</h3>
+          <p>Our meals come in compostable, recyclable packaging designed to minimize waste and protect the planet.</p>
+        </article>
+        <article class="feature-item" tabindex="0">
+          <h3>Convenience Without Compromise</h3>
+          <p>Skip the grocery store and meal fatigue. Get perfectly portioned meals delivered right to your urban doorstep.</p>
+        </article>
+        <article class="feature-item" tabindex="0">
+          <h3>Committed to Sustainability</h3>
+          <p>We prioritize sustainable sourcing, low-waste operations, and ethical practices in every step of our meal prep process.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="social-proof" aria-label="Customer testimonials placeholder">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonials-placeholder">
+        Customer testimonials coming soon. Stay tuned!
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at <a href="mailto:e2e4-apprenti@baget.ai">e2e4-apprenti@baget.ai</a></p>
+    <p>&copy; 2024 Eco Meal Prep Delivery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
